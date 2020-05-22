@@ -1,8 +1,4 @@
-Supported tags and respective `Dockerfile` links
-================================================
-
-  * https://github.com/NullPrice/docker-youtube-dl/packages
-
+![Docker](https://github.com/NullPrice/docker-youtube-dl/workflows/Docker/badge.svg)
 
 What is youtube-dl?
 ==================
