@@ -71,8 +71,11 @@ jobs:
           # Use Docker `latest` tag convention
           [ "$VERSION" == "master" ] && VERSION=latest
 
+          # Set youtube-dl version as a tag
+          YOUTUBE_DL_VER=$(docker run IMAGE_ID --version)
+
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
 
-          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION $IMAGE_ID:$YOUTUBE_DL_VER
           docker push $IMAGE_ID:$VERSION
