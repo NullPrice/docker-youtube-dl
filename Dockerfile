@@ -1,4 +1,5 @@
 FROM alpine:3.12
+LABEL org.opencontainers.image.source https://github.com/NullPrice/docker-youtube-dl
 
 RUN set -x \
    && apk add --no-cache ca-certificates curl ffmpeg python3 gnupg \
