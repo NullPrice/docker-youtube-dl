@@ -24,6 +24,11 @@ Note: The entrypoint is set to `youtube-dl`, so do *not* put `youtube-dl` again 
   * **Simple**: One command and you should be ready to go. All documented here.
   * **Secure**: Runs as any user.
 
+# Differences in this fork?
+
+The only difference in this fork is that it pushes to [GitHub Container Registry ](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry) instead of Docker Hub.  
+
+This image is also rebuilt nightly and tagged with the `youtube-dl` version at time of build.
 
 # User Feedback
 
