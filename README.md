@@ -1,16 +1,16 @@
 ![Docker](https://github.com/NullPrice/docker-youtube-dl/workflows/Docker/badge.svg)
 
-What is youtube-dl?
-==================
+# What is youtube-dl?
 
 [youtube-dl](https://github.com/rg3/youtube-dl) is a command-line program to download videos from YouTube.com and other video sites.
 
 
-How to use this image
-=====================
+# How to use this image
 
-    $ docker run --rm --user $UID:$GID -v $PWD:/downloads wernight/youtube-dl \
+   ```bash
+	docker run --rm --user $UID:$GID -v $PWD:/downloads ghcr.io/nullprice/docker-youtube-dl/youtube-dl:latest \
           <video_url>
+   ```
 
   * `--user $UID:$GID` is to run as your current user, and not `root`.
   * `-v $PWD:/downloads` is to store downloaded files in the current working directory.
@@ -18,15 +18,13 @@ How to use this image
 
 Note: The entrypoint is set to `youtube-dl`, so do *not* put `youtube-dl` again as argument.
 
-Features of this image
-----------------------
+# Features of this image
 
   * **Small**: Built based on official [Alpine Linux](https://registry.hub.docker.com/_/alpine/).
   * **Simple**: One command and you should be ready to go. All documented here.
   * **Secure**: Runs as any user.
 
 
-User Feedback
-=============
+# User Feedback
 
-Having more issues? [Report a bug on GitHub](https://github.com/wernight/docker-youtube-dl/issues).
+Having more issues? [Report a bug on GitHub](https://github.com/NullPrice/docker-youtube-dl/issues).
